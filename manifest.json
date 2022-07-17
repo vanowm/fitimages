@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"applications": {
+		"gecko": {
+			"id": "fitimages@vano",
+			"strict_min_version": "60.0",
+			"strict_max_version": "104.0"
+		}
+	},
+	"name": "Fit images",
+	"author": "V@no",
+	"description": "Fit images to window",
+	"version": "2.0.0",
+	"experiment_apis": {
+		"BootstrapLoader": {
+			"schema": "api/BootstrapLoader/schema.json",
+			"parent": {
+				"scopes": ["addon_parent"],
+				"paths": [["BootstrapLoader"]],
+				"script": "api/BootstrapLoader/implementation.js"
+			}
+	 }
+	},
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	}
+}
